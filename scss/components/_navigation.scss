@@ -1,0 +1,40 @@
+/* ============================================= */
+/*              Navigation                       */
+/* ============================================= */
+
+.header {
+    @include flexy();
+    .site-title {
+        flex-grow: 1;
+    }
+}
+
+.site-header-sm {
+    @include flexy($align: center, $just: space-between, $dir: row-reverse);
+}
+
+.site-header-vertical {
+    padding: 1rem 0;
+    width: 4rem;
+    cursor: pointer;
+}
+
+.site-header-horizontal {
+    padding: 1rem 0;
+    width: 4rem;
+    cursor: pointer;
+    display: none; 
+}
+
+// .nav-modal {
+//     display: none;
+//     &-list {
+//         @include flexy($just: center, $align: center);
+//         margin: 0;
+//         padding: 0;
+//         list-style: none;
+//         li {
+//             padding: 1rem 1rem;
+//         }
+//     }
+// }

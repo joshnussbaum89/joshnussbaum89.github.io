@@ -1,0 +1,22 @@
+/* ============================================= */
+/*              Typography                       */
+/* ============================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 2rem;
+    font-Family: 'Quattrocento Sans', Sans-Serif;
+    background-color: $portfolio-yellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-Family: 'Ovo', Serif;
+}

@@ -1,0 +1,14 @@
+/* ============================================= */
+/*              Media Queries                    */
+/* ============================================= */
+
+@media (min-width: $md) {
+ 
+    .site-header-vertical {
+        display: none;
+    }
+    
+    .site-header-horizontal {
+        display: block; 
+    }
+}
