@@ -1,3 +1,31 @@
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
+
+.site-header {
+    @include flexy($align: center, $just: space-between);
+    padding: 1rem 0;
+}
+
+.site-header-vertical {
+    display: none; 
+}
+
+.site-header-horizontal,
+.site-header-vertical {
+    width: 4rem;
+    cursor: pointer;
+    fill: $dark-text;
+}
+
+.nav-modal {
+    display: none;
+}
+
+.nav-modal-list a {
+    text-decoration: none;
+    &:hover {
+        color: $dark-grey;
+    }
+} 
+

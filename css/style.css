@@ -341,11 +341,11 @@ template {
 /*              Typography                       */
 /* ============================================= */
 * {
-  box-sizing: border-box;
+  color: #333333;
 }
 
 body {
-  margin: 0 2rem;
+  margin: 0 2.5rem;
   font-Family: "Quattrocento Sans", Sans-Serif;
   background-color: #f3d887;
 }
@@ -365,6 +365,35 @@ h6 {
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.site-header-vertical {
+  display: none;
+}
+
+.site-header-horizontal,
+.site-header-vertical {
+  width: 4rem;
+  cursor: pointer;
+  fill: #333333;
+}
+
+.nav-modal {
+  display: none;
+}
+
+.nav-modal-list a {
+  text-decoration: none;
+}
+.nav-modal-list a:hover {
+  color: #505050;
+}
+
 /* ============================================= */
 /*              Button                           */
 /* ============================================= */
@@ -377,33 +406,6 @@ h6 {
 /* ============================================= */
 /*              Navigation                       */
 /* ============================================= */
-.header {
-  display: flex;
-}
-.header .site-title {
-  flex-grow: 1;
-}
-
-.site-header-sm {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.site-header-vertical {
-  padding: 1rem 0;
-  width: 4rem;
-  cursor: pointer;
-}
-
-.site-header-horizontal {
-  padding: 1rem 0;
-  width: 4rem;
-  cursor: pointer;
-  display: none;
-}
-
 /* ============================================= */
 /*              Social                           */
 /* ============================================= */
@@ -415,11 +417,39 @@ h6 {
 /* ============================================= */
 @media (min-width: 768px) {
   .site-header-vertical {
-    display: none;
+    display: block;
   }
 
   .site-header-horizontal {
+    display: none;
+  }
+
+  .site-title {
+    font-size: 2.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .site-header-vertical {
+    display: none;
+  }
+
+  .nav-modal {
     display: block;
+  }
+  .nav-modal-list {
+    display: flex;
+    font-size: 1.2rem;
+    list-style: none;
+  }
+  .nav-modal-list li {
+    padding: 0 2rem;
   }
 }
 

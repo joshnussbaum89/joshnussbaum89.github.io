@@ -5,10 +5,38 @@
 @media (min-width: $md) {
  
     .site-header-vertical {
-        display: none;
+        display: block;
     }
     
     .site-header-horizontal {
-        display: block; 
+        display: none;
+    }
+
+    .site-title {
+        font-size: 2.4rem;
+    }
+
+}
+
+@media (min-width: $lg) {
+    .site-header {
+        @include flexy($align: center, $just: space-between);
+        padding: 1rem 0;
+    }
+
+    .site-header-vertical {
+        display: none;
+    }
+
+    .nav-modal {
+        display: block;
+        &-list {
+            @include flexy();
+            font-size: 1.2rem;
+            list-style: none;
+            li {
+                padding: 0 2rem;
+            }
+        }
     }
 }
