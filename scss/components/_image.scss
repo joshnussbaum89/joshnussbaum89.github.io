@@ -5,3 +5,10 @@
 .avatar {
     margin: 3rem;
 }
+
+.about {
+    @include flexy($dir: column, $just: space-between);
+}
+.about-img {
+    width: 100%;
+}
