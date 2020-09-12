@@ -345,6 +345,10 @@ body {
   font-Family: "Quattrocento Sans", Sans-Serif;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -368,58 +372,44 @@ hr {
 }
 
 .bio {
-  margin: 0 2.5rem;
+  width: 80%;
+  margin: auto;
   text-align: center;
+  position: relative;
 }
 .bio h2 {
   margin: 2rem 0;
 }
-.bio-cards {
+.bio-para {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1000;
 }
 
 .about {
   margin: 1rem 0;
 }
 
-.card-1,
-.card-2,
-.card-3,
-.card-4 {
-  border: 2px solid #333333;
-  text-align: center;
-  width: 350px;
-  margin: 1rem 0;
-  padding: 1rem;
-}
-
-.card-1 {
-  box-shadow: 5px 5px 0 #333333;
-}
-
-.card-2 {
-  box-shadow: -5px 5px 0 #736CC4;
-}
-
-.card-3 {
-  box-shadow: -5px -5px 0 #3C3678;
-}
-
-.card-4 {
-  box-shadow: 5px -5px 0 #f3d887;
-}
-
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
 .header {
-  margin: 0 2.5rem;
+  background-color: #f2f4f8;
+}
+.header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  transform: skewY(-2deg);
+  background-color: #fff;
+  bottom: -25px;
 }
 
-.header,
-main {
+.header {
   height: 100vh;
 }
 
@@ -427,6 +417,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0 2.5rem;
   padding: 1rem 0;
 }
 
@@ -457,9 +448,6 @@ main {
 /*              Button                           */
 /* ============================================= */
 /* ============================================= */
-/*              Graphs                           */
-/* ============================================= */
-/* ============================================= */
 /*              Images                           */
 /* ============================================= */
 .avatar {
@@ -474,6 +462,13 @@ main {
 
 .about-img {
   width: 100%;
+}
+
+.blob {
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  width: 550px;
 }
 
 /* ============================================= */
@@ -523,17 +518,6 @@ main {
   }
   .nav-modal-list li {
     padding: 0 2rem;
-  }
-
-  .bio-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 55px;
-  }
-
-  .card-3,
-.card-4 {
-    justify-self: end;
   }
 }
 

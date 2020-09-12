@@ -1,17 +1,29 @@
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
+
 .header {
-    margin: 0 2.5rem;
+    // padding: 0 2.5rem;
+    background-color: $header-bg;
+    &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        transform: skewY(-2deg);
+        background-color: $white;
+        bottom: -25px;
+    }
 }
 
-.header,
-main {
+.header {
     height: 100vh;
 }
 
 .site-header {
     @include flexy($align: center, $just: space-between);
+    margin: 0 2.5rem;
     padding: 1rem 0;
 }
 

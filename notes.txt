@@ -1,0 +1,9 @@
+<p>Hi there, thank you for visiting!</p>
+
+<p>I've spent my entire life, as a musician, creating things that mean a lot to me. I know what
+it means to put your heart and soul into something and really connect with another human being.</p>
+
+<p>Just as I have accomplished with music, I am commited to becoming as meaningful creater as a
+Web Developer. I hope to build tools and applications that are not only ethical, but fun to use. I believe we are seeing a turning point that will welcome so many more people into the tech space, and I am so excited to be a part of that space.</p>
+
+<p>Please feel free to reach out at any time. I'm always looking for new people to collaborate with, and learn from.</p>

@@ -19,6 +19,7 @@
 }
 
 @media (min-width: $lg) {
+    
     .site-header {
         @include flexy($align: center, $just: space-between);
         padding: 1rem 0;
@@ -40,14 +41,4 @@
         }
     }
 
-    .bio-cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 55px;
-    }
-
-    .card-3,
-    .card-4 {
-        justify-self: end;
-    } 
 }

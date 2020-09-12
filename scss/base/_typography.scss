@@ -2,10 +2,13 @@
 /*              Typography                       */
 /* ============================================= */
 
-
 body {
     color: $dark-text;
     font-Family: 'Quattrocento Sans', Sans-Serif;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 h1,
