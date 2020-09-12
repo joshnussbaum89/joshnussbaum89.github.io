@@ -13,9 +13,16 @@ hr {
 .bio {
     margin: 0 2.5rem;
     text-align: center;
+    h2 {
+        margin: 2rem 0;
+    }
     &-cards {
         @include flexy($dir: column, $align: center);
     }
+}
+
+.about {
+    margin: 1rem 0;
 }
 
 .card-1,
