@@ -350,6 +350,10 @@ body {
   background: linear-gradient(#f2f4f8, #fff, #BAE6FF);
 }
 
+hr {
+  margin: 0 40px;
+}
+
 a {
   text-decoration: none;
 }
@@ -370,10 +374,6 @@ h6 {
 /* ============================================= */
 /*              About                            */
 /* ============================================= */
-hr {
-  margin: 0;
-}
-
 .bio {
   width: 80%;
   margin: auto;
