@@ -1,0 +1,27 @@
+/* ============================================= */
+/*              About                            */
+/* ============================================= */
+
+hr {
+    margin: 0;
+}
+
+.bio {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    h2 {
+        margin: 2rem 0;
+    }
+    &-para {
+        @include flexy($dir: column, $align: center);
+        font-size: 1.2rem;
+        position: relative;
+        z-index: 1000;
+    }
+}
+
+.about {
+    padding: 75px 0 150px;
+}

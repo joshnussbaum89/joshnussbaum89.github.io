@@ -4,21 +4,22 @@
 
 .header {
     // padding: 0 2.5rem;
-    background-color: $header-bg;
-    &::after {
-        content: '';
-        display: block;
-        width: 100%;
-        height: 50px;
-        position: absolute;
-        transform: skewY(-2deg);
-        background-color: $white;
-        bottom: -25px;
-    }
+    // background: linear-gradient($header-bg, white); //REMOVE IF YOU DONT LIKE THE GRADIENT
+    // &::after {
+    //     content: '';
+    //     display: block;
+    //     width: 100%;
+    //     height: 50px;
+    //     position: absolute;
+    //     transform: skewY(-2deg);
+    //     background-color: $white;
+    //     bottom: -25px;
+    // } 
+    padding-bottom: 75px;
 }
 
-.header {
-    height: 100vh;
+.site-title {
+    font-size: 2rem;
 }
 
 .site-header {
@@ -42,10 +43,18 @@
     display: none;
 }
 
-.nav-modal-list a {
+.nav-modal-list a,
+.site-title a {
     text-decoration: none;
     color: $dark-text;
     &:hover {
         color: $dark-grey;
     }
 } 
+
+.hero {
+    @include flexy($align: center, $dir: column);
+    h2 {
+        margin: 2rem 0;
+    }
+}

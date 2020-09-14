@@ -340,9 +340,18 @@ template {
 /* ============================================= */
 /*              Typography                       */
 /* ============================================= */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #333333;
   font-Family: "Quattrocento Sans", Sans-Serif;
+  background: linear-gradient(#f2f4f8, #fff, #BAE6FF);
+}
+
+a {
+  text-decoration: none;
 }
 
 h2 {
@@ -359,14 +368,8 @@ h6 {
 }
 
 /* ============================================= */
-/*              Body                             */
+/*              About                            */
 /* ============================================= */
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 hr {
   margin: 0;
 }
@@ -384,33 +387,24 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.2rem;
   position: relative;
   z-index: 1000;
 }
 
 .about {
-  margin: 1rem 0;
+  padding: 75px 0 150px;
 }
 
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
 .header {
-  background-color: #f2f4f8;
-}
-.header::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 50px;
-  position: absolute;
-  transform: skewY(-2deg);
-  background-color: #fff;
-  bottom: -25px;
+  padding-bottom: 75px;
 }
 
-.header {
-  height: 100vh;
+.site-title {
+  font-size: 2rem;
 }
 
 .site-header {
@@ -436,12 +430,23 @@ hr {
   display: none;
 }
 
-.nav-modal-list a {
+.nav-modal-list a,
+.site-title a {
   text-decoration: none;
   color: #333333;
 }
-.nav-modal-list a:hover {
+.nav-modal-list a:hover,
+.site-title a:hover {
   color: #505050;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero h2 {
+  margin: 2rem 0;
 }
 
 /* ============================================= */
@@ -472,14 +477,96 @@ hr {
 }
 
 /* ============================================= */
-/*              Navigation                       */
-/* ============================================= */
-/* ============================================= */
-/*              Social                           */
+/*              Contact                          */
 /* ============================================= */
 /* ============================================= */
 /*              Members                          */
 /* ============================================= */
+.portfolio {
+  padding: 75px 0 150px;
+}
+.portfolio-title {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.portfolio-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 4rem;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+}
+
+.card-overlay {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.card:hover .card-image {
+  opacity: 0.3;
+}
+
+.card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-image {
+  opacity: 1;
+  width: 100%;
+  transition: 0.4s ease;
+  backface-visibility: hidden;
+}
+
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
+  border: 2px solid #333333;
+  width: 80%;
+}
+
+.card-1 {
+  box-shadow: 5px 5px 0 #f3d887;
+}
+
+.card-2 {
+  box-shadow: -5px 5px 0 #736CC4;
+}
+
+.card-3 {
+  box-shadow: -5px -5px 0 #333333;
+}
+
+.card-4 {
+  box-shadow: 5px -5px 0 #3C3678;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.overlay-button {
+  color: #333333;
+  border: 1px solid #333333;
+  padding: 0.4rem 1.4rem;
+  margin: 1rem 0.4rem;
+  box-shadow: 3px 3px 0 black;
+  transition: 0.4s;
+}
+
+.overlay-button:hover {
+  background-color: #fff;
+}
+
 /* ============================================= */
 /*              Media Queries                    */
 /* ============================================= */
@@ -492,8 +579,12 @@ hr {
     display: none;
   }
 
-  .site-title {
-    font-size: 2.4rem;
+  .about {
+    padding: 75px 0 200px;
+  }
+
+  .bio {
+    width: 70%;
   }
 }
 @media (min-width: 1024px) {
@@ -518,6 +609,19 @@ hr {
   }
   .nav-modal-list li {
     padding: 0 2rem;
+  }
+
+  .about {
+    padding: 75px 0 250px;
+  }
+
+  .bio {
+    width: 60%;
+  }
+
+  .portfolio-cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
   }
 }
 

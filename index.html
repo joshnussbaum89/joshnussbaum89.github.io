@@ -5,8 +5,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 	<title>Josh Nussbaum Portfolio</title>
 </head>
@@ -16,8 +14,8 @@
 	<header class="header">
 
 		<section class="site-header">
-
-			<h1 class="site-title">Josh Nussbaum</h1>
+			<!-- navigation -->
+			<h1 class="site-title"><a href="index.html">Josh Nussbaum</a></h1>
 			<div class="nav-modal">
 				<ul class="nav-modal-list">
 					<li><a href="#about">About</a></li>
@@ -25,7 +23,7 @@
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
-
+			<!-- nav SVG's -->
 			<svg class="site-header-vertical" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 				<path
 					d="M256 192c-35.292 0-64 28.708-64 64s28.708 64 64 64 64-28.708 64-64-28.708-64-64-64zm0 106.667c-23.521 0-42.667-19.135-42.667-42.667s19.146-42.667 42.667-42.667 42.667 19.135 42.667 42.667-19.146 42.667-42.667 42.667zM256 384c-35.292 0-64 28.708-64 64s28.708 64 64 64 64-28.708 64-64-28.708-64-64-64zm0 106.667c-23.521 0-42.667-19.135-42.667-42.667s19.146-42.667 42.667-42.667 42.667 19.135 42.667 42.667-19.146 42.667-42.667 42.667zM256 128c35.292 0 64-28.708 64-64S291.292 0 256 0s-64 28.708-64 64 28.708 64 64 64zm0-106.667c23.521 0 42.667 19.135 42.667 42.667S279.521 106.667 256 106.667 213.333 87.531 213.333 64 232.479 21.333 256 21.333z" />
@@ -36,7 +34,7 @@
 			</svg>
 
 		</section>
-
+		<!-- hero -->
 		<div class="hero">
 			<svg class="avatar" width="264" height="280" xmlns="http://www.w3.org/2000/svg"
 				xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -150,8 +148,8 @@
 			<h2>Web Developer</h2>
 		</div>
 
-		<!-- hero -->
 	</header>
+	<hr>
 
 	<main>
 		<!-- about -->
@@ -178,6 +176,7 @@
 						with,
 						and learn from.</p>
 				</div>
+				<!-- blob SVG -->
 				<svg class="blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
 					<path fill="#D0E2FF"
 						d="M139 46.1c12.5 9.3 24.3 19.4 31.7 33.1 7.5 13.7 10.6 30.9 2.1 40.6-8.4 9.7-28.4 11.7-42.5 17.2-14 5.6-22.2 14.5-30.9 15.4-8.8.8-18.1-6.4-22.1-15.2-3.9-8.8-2.4-19.2-6.6-28.5-4.1-9.3-13.9-17.6-14.3-24.9-.4-7.2 8.5-13.5 17.4-24.1 8.8-10.5 17.5-25.5 28.5-28.6 10.9-3.1 24.2 5.6 36.7 15z" />
@@ -185,15 +184,65 @@
 
 			</div>
 
-			</div>
-
 		</section>
+		<hr>
 
 	</main>
 
-	<section>
+	<!-- portfolio -->
+	<section id="portfolio" class="portfolio">
+		<h2 class="portfolio-title">Portfolio</h2>
+		<div class="portfolio-cards">
 
-		<!-- portfolio -->
+			<div class="card">
+				<img src="images/wheel-of-success.png" alt="Wheel Of Success" class="card-1 card-image">
+				<div class="card-overlay">
+					<div>
+						<h3 class="card-title">Wheel Of Success</h3>
+					</div>
+					<div class="overlay-button-container">
+						<a href="#" class="overlay-button">Live</a>
+						<a href="#" class="overlay-button">Code</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/photo-gallery.png" alt="Photo Gallery" class="card-2 card-image">
+				<div class="card-overlay">
+					<div>
+						<h3 class="card-title">Photo Gallery</h3>
+					</div>
+					<div class="overlay-button-container">
+						<a href="#" class="overlay-button">Live</a>
+						<a href="#" class="overlay-button">Code</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/web-app-dashboard.png" alt="Web App Dashboard" class="card-3 card-image">
+				<div class="card-overlay">
+					<div>
+						<h3 class="card-title">Web App Dashboard</h3>
+					</div>
+					<div class="overlay-button-container">
+						<a href="#" class="overlay-button">Live</a>
+						<a href="#" class="overlay-button">Code</a>
+					</div>
+				</div>
+			</div>
+			<div class="card">
+				<img src="images/employee-directory.png" alt="employee-directory" class="card-4 card-image">
+				<div class="card-overlay">
+					<div>
+						<h3 class="card-title">Employee Directory</h3>
+					</div>
+					<div class="overlay-button-container">
+						<a href="#" class="overlay-button">Live</a>
+						<a href="#" class="overlay-button">Code</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</section>
 
@@ -204,15 +253,6 @@
 	</footer>
 
 	<!-- JavaScript  -->
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-		crossorigin="anonymous"></script>
 	<script src="js/main.js"></script>
 </body>
 

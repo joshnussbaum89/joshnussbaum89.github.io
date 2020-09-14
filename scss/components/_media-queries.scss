@@ -12,10 +12,13 @@
         display: none;
     }
 
-    .site-title {
-        font-size: 2.4rem;
+    .about {
+        padding: 75px 0 200px;
     }
 
+    .bio {
+        width: 70%;
+    }
 }
 
 @media (min-width: $lg) {
@@ -39,6 +42,19 @@
                 padding: 0 2rem;
             }
         }
+    }
+
+    .about {
+        padding: 75px 0 250px;
+    }
+
+    .bio {
+        width: 60%;
+    }
+
+    .portfolio-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 4rem;
     }
 
 }

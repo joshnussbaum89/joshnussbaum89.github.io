@@ -2,9 +2,18 @@
 /*              Typography                       */
 /* ============================================= */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     color: $dark-text;
     font-Family: 'Quattrocento Sans', Sans-Serif;
+    background: linear-gradient($header-bg, $white, #BAE6FF);
+}
+
+a {
+    text-decoration: none;
 }
 
 h2 {
