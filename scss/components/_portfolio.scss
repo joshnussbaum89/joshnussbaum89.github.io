@@ -40,9 +40,7 @@
   
 .card-image {
     opacity: 1;
-    width: 100%;
     transition: .4s ease;
-    backface-visibility: hidden;
 }
 
 .card-1,
@@ -84,4 +82,4 @@
 
 .overlay-button:hover {
     background-color: $white;
-  }
+}

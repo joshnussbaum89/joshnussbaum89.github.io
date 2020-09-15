@@ -521,9 +521,7 @@ h6 {
 
 .card-image {
   opacity: 1;
-  width: 100%;
   transition: 0.4s ease;
-  backface-visibility: hidden;
 }
 
 .card-1,
