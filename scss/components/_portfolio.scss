@@ -2,7 +2,7 @@
 /*              Members                          */
 /* ============================================= */
 .portfolio {
-    padding: 75px 0 150px;
+    padding: 75px 50px 150px;
     &-title {
         margin: 2rem 0;
         text-align: center;
@@ -10,6 +10,7 @@
 }
 
 .portfolio-cards {
+    margin: 4rem 0;
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 4rem;
@@ -30,7 +31,7 @@
     -ms-transform: translate(-50%, -50%);
 }
 
-.card:hover .card-image {
+.card:hover .card-image { // .CARD OVERFLOWS TO THE LEFT AND RIGHT AND THIS AFFECTS HOVER FUNCTIONALITY
     opacity: 0.3;
 }
   
@@ -48,7 +49,7 @@
 .card-3,
 .card-4 {
     border: 2px solid $dark-text;
-    width: 80%;
+    width: 100%;
 }
 
 .card-1 {
@@ -68,7 +69,7 @@
 }
 
 .card-title {
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .overlay-button {

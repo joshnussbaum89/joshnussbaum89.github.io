@@ -483,7 +483,7 @@ h6 {
 /*              Members                          */
 /* ============================================= */
 .portfolio {
-  padding: 75px 0 150px;
+  padding: 75px 50px 150px;
 }
 .portfolio-title {
   margin: 2rem 0;
@@ -491,6 +491,7 @@ h6 {
 }
 
 .portfolio-cards {
+  margin: 4rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 4rem;
@@ -529,7 +530,7 @@ h6 {
 .card-3,
 .card-4 {
   border: 2px solid #333333;
-  width: 80%;
+  width: 100%;
 }
 
 .card-1 {
@@ -549,7 +550,7 @@ h6 {
 }
 
 .card-title {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 .overlay-button {
@@ -583,6 +584,10 @@ h6 {
 
   .bio {
     width: 70%;
+  }
+
+  .card-title {
+    font-size: 2rem;
   }
 }
 @media (min-width: 1024px) {
