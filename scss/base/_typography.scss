@@ -9,7 +9,7 @@ html {
 body {
     color: $dark-text;
     font-Family: 'Quattrocento Sans', Sans-Serif;
-    background: linear-gradient($header-bg, $white, #BAE6FF);
+    background: linear-gradient($header-bg, $white, rgba(186, 230, 255, 0.5));
 }
 
 hr {

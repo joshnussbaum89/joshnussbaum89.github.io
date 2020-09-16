@@ -2,7 +2,7 @@
 /*              Members                          */
 /* ============================================= */
 .portfolio {
-    padding: 75px 50px 150px;
+    padding: 75px 50px;
     &-title {
         margin: 2rem 0;
         text-align: center;
@@ -13,25 +13,24 @@
     margin: 4rem 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 4rem;
+    grid-gap: 3rem;
 }
 
 .card {
     position: relative;
     text-align: center;
+    &-overlay {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+    }
 }
 
-.card-overlay {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-}
-
-.card:hover .card-image { // .CARD OVERFLOWS TO THE LEFT AND RIGHT AND THIS AFFECTS HOVER FUNCTIONALITY
+.card:hover .card-image {
     opacity: 0.3;
 }
   
@@ -47,40 +46,23 @@
 .card-1,
 .card-2,
 .card-3,
-.card-4 {
+.card-4,
+.card-5,
+.card-6 {
     border: 2px solid $dark-text;
+    box-shadow: 5px 5px 0 $dark-text;
     width: 100%;
 }
 
-.card-1 {
-    box-shadow: 5px 5px 0 $portfolio-yellow;
-}
-
-.card-2 {
-    box-shadow: -5px 5px 0 $card-purp;
-}
-
-.card-3 {
-    box-shadow: -5px -5px 0 $dark-text;
-}
-
-.card-4 {
-    box-shadow: 5px -5px 0 $card-dark-purp;
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover,
+.card-6:hover {
+    box-shadow: none;
 }
 
 .card-title {
     font-size: 1.3rem;
-}
-
-.overlay-button {
-    color: $dark-text;
-    border: 1px solid $dark-text;
-    padding: .4rem 1.4rem;
-    margin: 1rem .4rem;
-    box-shadow: 3px 3px 0 black;
-    transition: .4s;
-}
-
-.overlay-button:hover {
-    background-color: $white;
 }

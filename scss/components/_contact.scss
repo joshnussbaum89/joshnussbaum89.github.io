@@ -1,3 +1,19 @@
 /* ============================================= */
 /*              Contact                          */
 /* ============================================= */
+
+.contact {
+    padding: 75px 50px;
+}
+
+.contact-info {
+    @include flexy($dir: column, $align: center);
+    &-icons {
+        @include flexy();
+    }
+}
+
+.contact-icon {
+    width: 40px;
+    margin: 2rem;
+}
