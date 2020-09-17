@@ -468,7 +468,7 @@ h6 {
 .overlay-button {
   color: #333333;
   border: 1px solid #333333;
-  padding: 0.4rem 1.4rem;
+  padding: 0.3rem 1.3rem;
   margin: 0 0.4rem;
   box-shadow: 3px 3px 0 #333333;
   transition: 0.4s;
@@ -595,7 +595,12 @@ h6 {
 }
 
 .card-title {
+  margin: auto;
   font-size: 1.3rem;
+}
+
+.card-description {
+  margin: 0.8rem auto;
 }
 
 /* ============================================= */

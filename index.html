@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans" rel="stylesheet">
-	<script src="https://use.fontawesome.com/0c2c87571b.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- AOS library -->
 	<link rel="stylesheet" href="css/style.css">
 	<title>Josh Nussbaum Portfolio</title>
 </head>
@@ -208,22 +208,25 @@
 
 			<div class="bio">
 
-				<h2>About</h2>
+				<h2 data-aos="fade-up">About</h2>
 				<div class="bio-para">
-					<p>Hi there, thank you for visiting!</p>
+					<p data-aos="fade-up">Hi there, thank you for visiting!</p>
 
-					<p>I've spent my entire life, as a musician, creating things that mean a lot to me. I know what
+					<p data-aos="fade-up">I've spent my entire life, as a musician, creating things that mean a lot to
+						me. I know what
 						it means to put your heart and soul into something and really connect with another human
 						being.
-					</p>
+					</p data-aos="fade-up">
 
-					<p>Just as I have accomplished with music, I am commited to becoming a meaningful creater as a
+					<p data-aos="fade-up">Just as I have accomplished with music, I am commited to becoming a meaningful
+						creater as a
 						Web Developer. I hope to build tools and applications that are not only ethical, but fun to
 						use.
 						I believe we are seeing a turning point that will welcome so many more people into the tech
 						space, and I am so excited to be a part of that space.</p>
 
-					<p>Please feel free to reach out at any time. I'm always looking for new people to collaborate
+					<p data-aos="fade-up">Please feel free to reach out at any time. I'm always looking for new people
+						to collaborate
 						with,
 						and learn from.</p>
 				</div>
@@ -242,54 +245,54 @@
 
 	<!-- portfolio -->
 	<section id="portfolio" class="portfolio">
-		<h2 class="portfolio-title">Portfolio</h2>
+		<h2 class="portfolio-title" data-aos="fade-up">Portfolio</h2>
 		<div class="portfolio-cards">
 
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/wheel-of-success.png" alt="Wheel Of Success" class="card-1 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">Wheel Of Success</h3>
-					<p class="card-description">HTML | CSS | JavaScript</p>
+					<p class="card-description">CSS | JS | DOM</p>
 					<div class="overlay-button-container">
 						<a href="#" class="overlay-button">Live</a>
 						<a href="#" class="overlay-button">Code</a>
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/photo-gallery.png" alt="Photo Gallery" class="card-2 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">Photo Gallery</h3>
-					<p class="card-description">HTML | Sass | jQuery</p>
+					<p class="card-description">Flexbox | Sass | jQuery</p>
 					<div class="overlay-button-container">
 						<a href="#" class="overlay-button">Live</a>
 						<a href="#" class="overlay-button">Code</a>
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/web-app-dashboard.png" alt="App Dashboard" class="card-3 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">App Dashboard</h3>
-					<p class="card-description">HTML | Sass | JavaScript</p>
+					<p class="card-description">SVG | CSS Grid | JS</p>
 					<div class="overlay-button-container">
 						<a href="#" class="overlay-button">Live</a>
 						<a href="#" class="overlay-button">Code</a>
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/employee-directory.png" alt="employee-directory" class="card-4 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">Employee Directory</h3>
-					<p class="card-description">HTML | Sass | JS | Fetch API</p>
+					<p class="card-description">CSS Grid | JS | Fetch API</p>
 					<div class="overlay-button-container">
 						<a href="#" class="overlay-button">Live</a>
 						<a href="#" class="overlay-button">Code</a>
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/style-guide.png" alt="style-guide" class="card-5 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">Sass Style Guide</h3>
@@ -300,7 +303,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="card">
+			<div class="card" data-aos="fade-up">
 				<img src="images/Airbnb.png" alt="Airbnb" class="card-6 card-image">
 				<div class="card-overlay">
 					<h3 class="card-title">Airbnb Clone</h3>
@@ -317,7 +320,7 @@
 	<hr>
 
 	<footer id="contact" class="contact">
-		<div class="contact-info">
+		<div class="contact-info" data-aos="fade-up">
 			<h2>Contact</h2>
 			<img class="headshot" src="images/me.png" alt="profile pic">
 			<!-- <h3>Lets talk!</h3> -->
@@ -355,6 +358,7 @@
 	</footer>
 
 	<!-- JavaScript  -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- AOS library -->
 	<script src="js/main.js"></script>
 </body>
 
