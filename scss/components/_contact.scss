@@ -23,12 +23,18 @@
 }
 
 .footer-sound-icon {
+    opacity: 0;
     width: 40px;
     margin: 1rem 0;
+    transition: opacity .4s;
+}
+
+.footer-sound-icon.fade {
+    opacity: 1;
 }
 
 .footer-hover {
-    transition: .1s;
+    margin-left: auto;
 }
 
 .footer-hover:hover {

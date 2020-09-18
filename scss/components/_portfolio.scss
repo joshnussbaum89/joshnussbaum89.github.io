@@ -71,3 +71,10 @@
 .card-description {
     margin: .8rem auto;
 }
+
+.overlay-button-container {
+    .overlay-button {
+        color: $dark-text;
+        text-decoration: none;
+    }
+}
