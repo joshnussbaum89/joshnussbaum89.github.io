@@ -399,45 +399,25 @@ h6 {
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
+.navbar-light .navbar-toggler-icon {
+  background-image: none !important;
+}
+.navbar-light .navbar-toggler {
+  outline: none;
+}
+
+.nav-icon-horizontal,
+.nav-icon-vertical {
+  fill: #333333;
+  width: 45px;
+}
+
+.nav-icon-horizontal {
+  display: none;
+}
+
 .header {
   padding-bottom: 75px;
-}
-
-.site-title {
-  font-size: 2rem;
-}
-
-.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 2.5rem;
-  padding: 1rem 0;
-}
-
-.site-header-vertical {
-  display: none;
-}
-
-.site-header-horizontal,
-.site-header-vertical {
-  width: 4rem;
-  cursor: pointer;
-  fill: #333333;
-}
-
-.nav-modal {
-  display: none;
-}
-
-.nav-modal-list a,
-.site-title a {
-  text-decoration: none;
-  color: #333333;
-}
-.nav-modal-list a:hover,
-.site-title a:hover {
-  color: #505050;
 }
 
 .hero {
@@ -460,6 +440,10 @@ h6 {
 
 .navbar-brand {
   font-size: 2rem;
+}
+.navbar-brand a {
+  color: #333333;
+  text-decoration: none;
 }
 
 .nav-item {
@@ -546,6 +530,14 @@ h6 {
   margin: 1rem 0;
 }
 
+.footer-hover {
+  transition: 0.1s;
+}
+
+.footer-hover:hover {
+  fill: #f22f46;
+}
+
 /* ============================================= */
 /*              Members                          */
 /* ============================================= */
@@ -624,11 +616,11 @@ h6 {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .site-header-vertical {
+  .nav-icon-horizontal {
     display: block;
   }
 
-  .site-header-horizontal {
+  .nav-icon-vertical {
     display: none;
   }
 
@@ -651,22 +643,6 @@ h6 {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 0;
-  }
-
-  .site-header-vertical {
-    display: none;
-  }
-
-  .nav-modal {
-    display: block;
-  }
-  .nav-modal-list {
-    display: flex;
-    font-size: 1.2rem;
-    list-style: none;
-  }
-  .nav-modal-list li {
-    padding: 0 2rem;
   }
 
   .about {

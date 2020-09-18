@@ -3,12 +3,12 @@
 /* ============================================= */
 
 @media (min-width: $md) {
- 
-    .site-header-vertical {
+
+    .nav-icon-horizontal {
         display: block;
     }
     
-    .site-header-horizontal {
+    .nav-icon-vertical {
         display: none;
     }
 
@@ -32,22 +32,6 @@
     .site-header {
         @include flexy($align: center, $just: space-between);
         padding: 1rem 0;
-    }
-
-    .site-header-vertical {
-        display: none;
-    }
-
-    .nav-modal {
-        display: block;
-        &-list {
-            @include flexy();
-            font-size: 1.2rem;
-            list-style: none;
-            li {
-                padding: 0 2rem;
-            }
-        }
     }
 
     .about {

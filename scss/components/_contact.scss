@@ -26,3 +26,11 @@
     width: 40px;
     margin: 1rem 0;
 }
+
+.footer-hover {
+    transition: .1s;
+}
+
+.footer-hover:hover {
+    fill: $hot-red;
+}

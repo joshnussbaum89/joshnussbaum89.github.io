@@ -1,56 +1,28 @@
 /* ============================================= */
 /*              Header                          */
 /* ============================================= */
-
-.header {
-    // padding: 0 2.5rem;
-    // background: linear-gradient($header-bg, white); //REMOVE IF YOU DONT LIKE THE GRADIENT
-    // &::after {
-    //     content: '';
-    //     display: block;
-    //     width: 100%;
-    //     height: 50px;
-    //     position: absolute;
-    //     transform: skewY(-2deg);
-    //     background-color: $white;
-    //     bottom: -25px;
-    // } 
-    padding-bottom: 75px;
+.navbar-light {
+    .navbar-toggler-icon {
+        background-image: none !important;
+    }
+    .navbar-toggler {
+        outline: none;
+    }
 }
 
-.site-title {
-    font-size: 2rem;
-}
-
-.site-header {
-    @include flexy($align: center, $just: space-between);
-    margin: 0 2.5rem;
-    padding: 1rem 0;
-}
-
-.site-header-vertical {
-    display: none; 
-}
-
-.site-header-horizontal,
-.site-header-vertical {
-    width: 4rem;
-    cursor: pointer;
+.nav-icon-horizontal,
+.nav-icon-vertical {
     fill: $dark-text;
+    width: 45px;
 }
 
-.nav-modal {
+.nav-icon-horizontal {
     display: none;
 }
 
-.nav-modal-list a,
-.site-title a {
-    text-decoration: none;
-    color: $dark-text;
-    &:hover {
-        color: $dark-grey;
-    }
-} 
+.header {
+    padding-bottom: 75px;
+}
 
 .hero {
     @include flexy($align: center, $dir: column);
@@ -71,8 +43,11 @@
 
 .navbar-brand {
     font-size: 2rem;
+    a {
+        color: $dark-text;
+        text-decoration: none;
+    }
 }
-
 
 .nav-item {
     font-size: 1.2rem;
