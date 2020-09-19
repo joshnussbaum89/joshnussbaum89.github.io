@@ -27,6 +27,12 @@
     
 }
 
+@media (max-width: $xs) {
+    .card-description {
+        display: none;
+    }
+}
+
 @media (min-width: $lg) {
     
     .site-header {

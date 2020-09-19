@@ -39,6 +39,7 @@ $portfolio-yellow: #f3d887;
 $header-bg: #f2f4f8;
 $card-purp: #736CC4;
 $card-dark-purp: #3C3678;
+$translucent-blue: rgba(186, 230, 255, 0.5);
 
 
 // Button Colors
@@ -80,6 +81,7 @@ $font-primary: "Lato", sans-serif;
 
 // Breakpoints
 
+$xs: 380px;
 $sm: 576px;
 $md: 768px;
 $lg: 1024px;

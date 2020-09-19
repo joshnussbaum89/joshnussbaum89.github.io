@@ -2,31 +2,15 @@
 /*              JavaScript                       */
 /* ============================================= */
 
-
 // initialize Animate on Scroll library
 AOS.init();
 
-// function delay() {
-//     setTimeout(function () {
-//         toTopIcon.style.display = "block";
-//     }, 2000);
-// }
-
-// window.addEventListener('scroll', delay());
-
-let scrollPos = 0;
+// fade in "back to top" icon when user scrolls past 600
 const toTopIcon = document.querySelector('.footer-sound-icon');
-
-function checkPosition() {
-    let windowY = window.scrollY;
-    if (windowY < scrollPos) {
-        // Scrolling UP
-        toTopIcon.classList.toggle('fade')
-    } else {
-        // Scrolling DOWN
-        toTopIcon.classList.toggle('fade')
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 600) {
+        toTopIcon.classList.add('fade');
+    } else if (window.scrollY < 600) {
+        toTopIcon.classList.remove('fade');
     }
-    scrollPos = windowY;
-}
-
-window.addEventListener('scroll', checkPosition);
+});

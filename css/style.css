@@ -346,6 +346,7 @@ html {
 
 body {
   color: #333333;
+  letter-spacing: 0.05rem;
   font-Family: "Quattrocento Sans", Sans-Serif;
   background: linear-gradient(#f2f4f8, #fff, rgba(186, 230, 255, 0.5));
 }
@@ -646,6 +647,11 @@ h6 {
   .portfolio-cards {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
+  }
+}
+@media (max-width: 380px) {
+  .card-description {
+    display: none;
   }
 }
 @media (min-width: 1024px) {

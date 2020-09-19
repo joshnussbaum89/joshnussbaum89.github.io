@@ -8,8 +8,9 @@ html {
 
 body {
     color: $dark-text;
+    letter-spacing: 0.05rem;
     font-Family: 'Quattrocento Sans', Sans-Serif;
-    background: linear-gradient($header-bg, $white, rgba(186, 230, 255, 0.5));
+    background: linear-gradient($header-bg, $white, $translucent-blue);
 }
 
 hr {
