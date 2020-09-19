@@ -396,7 +396,22 @@ h6 {
 }
 
 /* ============================================= */
-/*              Header                          */
+/*              Animations                       */
+/* ============================================= */
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes flicker {
+  50% {
+    transform: translateY(-10px);
+    fill: rgba(255, 255, 131, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+  }
+}
+/* ============================================= */
+/*              Header                           */
 /* ============================================= */
 .hero-title {
   font-family: "Waiting for the Sunrise", cursive;
@@ -406,11 +421,6 @@ h6 {
   text-transform: uppercase;
 }
 
-@keyframes caret {
-  50% {
-    border-color: transparent;
-  }
-}
 .navbar-light .navbar-toggler-icon {
   background-image: none !important;
   width: 100%;
@@ -450,6 +460,22 @@ h6 {
 .skills-icon {
   width: 50px;
   margin: 1rem 0.6rem;
+}
+
+.flicker-one {
+  animation: flicker 0.4s 4s ease-in-out;
+}
+
+.flicker-two {
+  animation: flicker 0.4s 4.2s ease-in-out;
+}
+
+.flicker-three {
+  animation: flicker 0.4s 4.4s ease-in-out;
+}
+
+.flicker-four {
+  animation: flicker 0.4s 4.6s ease-in-out;
 }
 
 .navbar-brand {

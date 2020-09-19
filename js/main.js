@@ -18,7 +18,7 @@ window.addEventListener('scroll', () => {
 // typewriter animation for page description
 document.addEventListener('DOMContentLoaded', function (event) {
     // array with texts to type in typewriter
-    const dataText = ["Web Developer", "Musician", "Welcome!"];
+    const dataText = ["Web Developer"];
 
     // type one text in the typwriter
     // keeps calling itself until the text is finished
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         if (typeof dataText[i] === 'undefined') {
             setTimeout(function () {
                 StartTextAnimation(0);
-            }, 2000);
+            }, 10000);
         }
         // check if dataText[i] exists
         if (i < dataText[i].length) {

@@ -1,5 +1,5 @@
 /* ============================================= */
-/*              Header                          */
+/*              Header                           */
 /* ============================================= */
   
 .hero-title {
@@ -8,12 +8,6 @@
     border-right: .05rem solid;
     animation: caret 1s steps(1) infinite;
     text-transform: uppercase;
-}
-  
-  @keyframes caret {
-    50% {
-      border-color: transparent;
-    }
 }
 
 .navbar-light {
@@ -57,6 +51,18 @@
     margin: 1rem .6rem;
 }
 
+.flicker-one {
+    animation: flicker .4s 4s ease-in-out;
+}
+.flicker-two {
+    animation: flicker .4s 4.2s ease-in-out;
+}
+.flicker-three {
+    animation: flicker .4s 4.4s ease-in-out;
+}
+.flicker-four {
+    animation: flicker .4s 4.6s ease-in-out;
+}
 
 .navbar-brand {
     font-size: 2rem;
