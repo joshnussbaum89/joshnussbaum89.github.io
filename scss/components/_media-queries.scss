@@ -27,12 +27,6 @@
     
 }
 
-@media (max-width: $xs) {
-    .card-description {
-        display: none;
-    }
-}
-
 @media (min-width: $lg) {
     
     .site-header {
@@ -56,4 +50,33 @@
         margin: auto;
     }
 
+}
+
+@media (max-width: $xs) {
+
+    .card-description {
+        display: none;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .nav-icon-horizontal,
+    .nav-icon-vertical {
+        width: 35px;
+    }
+
+    .blob-one {
+        width: 950px;
+    }
+
+}
+
+@media (max-width: $md) {
+
+    .blob-one {
+        right: 0px;
+    }
+    
 }

@@ -13,8 +13,6 @@
     &-para {
         @include flexy($dir: column, $align: center);
         font-size: 1.2rem;
-        position: relative;
-        z-index: 1000;
     }
 }
 

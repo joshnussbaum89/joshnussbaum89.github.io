@@ -389,8 +389,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
-  position: relative;
-  z-index: 1000;
 }
 
 .about {
@@ -484,15 +482,12 @@ h6 {
   justify-content: space-between;
 }
 
-.about-img {
-  width: 100%;
-}
-
-.blob {
+.blob-one {
+  z-index: -1;
   position: absolute;
-  top: 80px;
-  right: 0px;
-  width: 550px;
+  top: -200px;
+  right: -100px;
+  width: 1150px;
 }
 
 .headshot {
@@ -535,10 +530,6 @@ h6 {
 
 .footer-sound-icon.fade {
   opacity: 1;
-}
-
-.footer-hover {
-  margin-left: auto;
 }
 
 .footer-hover:hover {
@@ -649,11 +640,6 @@ h6 {
     grid-gap: 2rem;
   }
 }
-@media (max-width: 380px) {
-  .card-description {
-    display: none;
-  }
-}
 @media (min-width: 1024px) {
   .site-header {
     display: flex;
@@ -676,6 +662,29 @@ h6 {
 
   .footer-hover {
     margin: auto;
+  }
+}
+@media (max-width: 380px) {
+  .card-description {
+    display: none;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+  }
+
+  .nav-icon-horizontal,
+.nav-icon-vertical {
+    width: 35px;
+  }
+
+  .blob-one {
+    width: 950px;
+  }
+}
+@media (max-width: 768px) {
+  .blob-one {
+    right: 0px;
   }
 }
 

@@ -9,15 +9,13 @@
 .about {
     @include flexy($dir: column, $just: space-between);
 }
-.about-img {
-    width: 100%;
-}
 
-.blob {
+.blob-one {
+    z-index: -1;
     position: absolute;
-    top: 80px;
-    right: 0px;
-    width: 550px;
+    top: -200px;
+    right: -100px;
+    width: 1150px;
 }
 
 .headshot {
