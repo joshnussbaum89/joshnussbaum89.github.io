@@ -463,18 +463,26 @@ h6 {
 }
 
 .flicker-one {
+  -moz-animation: flicker 0.4s 4s ease-in-out;
+  -webkit-animation: flicker 0.4s 4s ease-in-out;
   animation: flicker 0.4s 4s ease-in-out;
 }
 
 .flicker-two {
+  -moz-animation: flicker 0.4s 4.2s ease-in-out;
+  -webkit-animation: flicker 0.4s 4.2s ease-in-out;
   animation: flicker 0.4s 4.2s ease-in-out;
 }
 
 .flicker-three {
+  -moz-animation: flicker 0.4s 4.4s ease-in-out;
+  -webkit-animation: flicker 0.4s 4.4s ease-in-out;
   animation: flicker 0.4s 4.4s ease-in-out;
 }
 
 .flicker-four {
+  -moz-animation: flicker 0.4s 4.6s ease-in-out;
+  -webkit-animation: flicker 0.4s 4.6s ease-in-out;
   animation: flicker 0.4s 4.6s ease-in-out;
 }
 
