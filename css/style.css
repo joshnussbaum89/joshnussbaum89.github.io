@@ -347,7 +347,7 @@ html {
 body {
   color: #333333;
   letter-spacing: 0.05rem;
-  font-Family: "Quattrocento Sans", Sans-Serif;
+  font-family: "Quattrocento Sans", sans-serif;
   background: linear-gradient(#f2f4f8, #fff, rgba(186, 230, 255, 0.5));
 }
 
@@ -369,7 +369,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-Family: "Ovo", Serif;
+  font-family: "Merriweather", serif;
+  font-weight: lighter;
 }
 
 /* ============================================= */

@@ -9,7 +9,7 @@ html {
 body {
     color: $dark-text;
     letter-spacing: 0.05rem;
-    font-Family: 'Quattrocento Sans', Sans-Serif;
+    font-family: 'Quattrocento Sans', sans-serif;
     background: linear-gradient($header-bg, $white, $translucent-blue);
 }
 
@@ -31,7 +31,8 @@ h3,
 h4,
 h5,
 h6 {
-    font-Family: 'Ovo', Serif;
+    font-family: 'Merriweather', serif;
+    font-weight: lighter;
 }
 
 //  /* width */

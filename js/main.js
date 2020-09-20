@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
             // wait for a while and call this function again for next character
             setTimeout(function () {
-                typeWriter(text, i + 1, fnCallback)
+                typeWriter(text, i + 1, fnCallback);
             }, 300);
         }
         // text finished, call callback if there is a callback function
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             }, 10000);
         }
         // check if dataText[i] exists
-        if (i < dataText[i].length) {
+        if (i < dataText.length) {
             // text exists! start typewriter animation
             typeWriter(dataText[i], 0, function () {
                 // after callback (and whole text has been animated), start next text
