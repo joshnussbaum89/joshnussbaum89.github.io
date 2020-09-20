@@ -359,10 +359,6 @@ a {
   text-decoration: none;
 }
 
-h2 {
-  font-size: 2rem;
-}
-
 h1,
 h2,
 h3,
@@ -373,9 +369,17 @@ h6 {
   font-weight: lighter;
 }
 
+h2 {
+  font-size: 2rem;
+}
+
 /* ============================================= */
 /*              About                            */
 /* ============================================= */
+.about {
+  padding: 75px 0 150px;
+}
+
 .bio {
   width: 80%;
   margin: auto;
@@ -390,10 +394,6 @@ h6 {
   flex-direction: column;
   align-items: center;
   font-size: 1.2rem;
-}
-
-.about {
-  padding: 75px 0 150px;
 }
 
 /* ============================================= */
@@ -471,12 +471,8 @@ h6 {
 /* ============================================= */
 /*              Header                           */
 /* ============================================= */
-.hero-title {
-  font-family: "Waiting for the Sunrise", cursive;
-  font-size: 2.5rem;
-  border-right: 0.05rem solid;
-  animation: caret 1s steps(1) infinite;
-  text-transform: uppercase;
+.header {
+  padding-bottom: 75px;
 }
 
 .navbar-light .navbar-toggler-icon {
@@ -486,6 +482,14 @@ h6 {
 }
 .navbar-light .navbar-toggler {
   outline: none;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+}
+.navbar-brand a {
+  color: #333333;
+  text-decoration: none;
 }
 
 .nav-icon-horizontal,
@@ -498,8 +502,16 @@ h6 {
   display: none;
 }
 
-.header {
-  padding-bottom: 75px;
+.nav-item {
+  font-size: 1.2rem;
+}
+
+.nav-link {
+  color: #333333 !important;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  color: #f22f46 !important;
 }
 
 .hero {
@@ -509,6 +521,11 @@ h6 {
 }
 .hero-title {
   margin: 1rem 0;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-size: 2.5rem;
+  border-right: 0.05rem solid;
+  animation: caret 1s steps(1) infinite;
+  text-transform: uppercase;
 }
 
 .skills {
@@ -542,18 +559,6 @@ h6 {
   animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
   -moz-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
   -webkit-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
-}
-
-.navbar-brand {
-  font-size: 2rem;
-}
-.navbar-brand a {
-  color: #333333;
-  text-decoration: none;
-}
-
-.nav-item {
-  font-size: 1.2rem;
 }
 
 /* ============================================= */
@@ -607,7 +612,7 @@ h6 {
 /*              Contact                          */
 /* ============================================= */
 .contact {
-  padding: 60px 50px 20px;
+  padding: 75px 50px 20px;
 }
 
 .contact-info {
@@ -620,7 +625,7 @@ h6 {
 }
 
 .contact-title {
-  margin-bottom: 2rem;
+  margin: 2rem 0;
 }
 
 .contact-icon {
@@ -632,7 +637,7 @@ h6 {
   opacity: 0;
   width: 40px;
   margin: 1rem 0;
-  transition: opacity 0.4s;
+  transition: 0.2s;
 }
 
 .footer-sound-icon.fade {

@@ -2,6 +2,10 @@
 /*              About                            */
 /* ============================================= */
 
+.about {
+    padding: 75px 0 150px;
+}
+
 .bio {
     width: 80%;
     margin: auto;
@@ -14,8 +18,4 @@
         @include flexy($dir: column, $align: center);
         font-size: 1.2rem;
     }
-}
-
-.about {
-    padding: 75px 0 150px;
 }
