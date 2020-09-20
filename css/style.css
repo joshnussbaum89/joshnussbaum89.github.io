@@ -403,11 +403,68 @@ h6 {
     border-color: transparent;
   }
 }
+@-webkit-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+@-moz-keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
 @keyframes flicker {
   50% {
     transform: translateY(-10px);
     fill: rgba(255, 255, 131, 0.2);
     box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+  }
+}
+@-webkit-keyframes flicker {
+  50% {
+    transform: translateY(-10px);
+    fill: rgba(255, 255, 131, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+  }
+}
+@-moz-keyframes flicker {
+  50% {
+    transform: translateY(-10px);
+    fill: rgba(255, 255, 131, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(0px) scale(0.9);
+  }
+  50% {
+    transform: translateY(10px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    transform: translateY(0px) scale(0.9);
+  }
+  50% {
+    transform: translateY(10px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    transform: translateY(0px) scale(0.9);
+  }
+  50% {
+    transform: translateY(10px) scale(1.1);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 /* ============================================= */
@@ -463,27 +520,27 @@ h6 {
 }
 
 .flicker-one {
-  -moz-animation: flicker 0.4s 4s ease-in-out;
-  -webkit-animation: flicker 0.4s 4s ease-in-out;
-  animation: flicker 0.4s 4s ease-in-out;
+  animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
+  -moz-animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
+  -webkit-animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
 }
 
 .flicker-two {
-  -moz-animation: flicker 0.4s 4.2s ease-in-out;
-  -webkit-animation: flicker 0.4s 4.2s ease-in-out;
-  animation: flicker 0.4s 4.2s ease-in-out;
+  animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
+  -moz-animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
+  -webkit-animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
 }
 
 .flicker-three {
-  -moz-animation: flicker 0.4s 4.4s ease-in-out;
-  -webkit-animation: flicker 0.4s 4.4s ease-in-out;
-  animation: flicker 0.4s 4.4s ease-in-out;
+  animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
+  -moz-animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
+  -webkit-animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
 }
 
 .flicker-four {
-  -moz-animation: flicker 0.4s 4.6s ease-in-out;
-  -webkit-animation: flicker 0.4s 4.6s ease-in-out;
-  animation: flicker 0.4s 4.6s ease-in-out;
+  animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
+  -moz-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
+  -webkit-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
 }
 
 .navbar-brand {

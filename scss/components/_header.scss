@@ -52,24 +52,51 @@
 }
 
 .flicker-one {
-    -moz-animation: flicker .4s 4s ease-in-out;
-    -webkit-animation: flicker .4s 4s ease-in-out; //fix this on safari and firefox!
-    animation: flicker .4s 4s ease-in-out;
+    animation: 
+        flicker .4s 4s ease-in-out,
+        fadeIn .5s .2s ease;
+    -moz-animation: 
+        flicker .4s 4s ease-in-out,
+        fadeIn .5s .2s ease;
+    -webkit-animation: 
+        flicker .4s 4s ease-in-out,
+        fadeIn .5s .2s ease;
 }
+
 .flicker-two {
-    -moz-animation: flicker .4s 4.2s ease-in-out;
-    -webkit-animation: flicker .4s 4.2s ease-in-out; //fix this on safari and firefox!
-    animation: flicker .4s 4.2s ease-in-out;
+    animation: 
+        flicker .4s 4.2s ease-in-out,
+        fadeIn .5s .4s ease;
+    -moz-animation: 
+        flicker .4s 4.2s ease-in-out,
+        fadeIn .5s .4s ease;
+    -webkit-animation: 
+        flicker .4s 4.2s ease-in-out,
+        fadeIn .5s .4s ease;
 }
+
 .flicker-three {
-    -moz-animation: flicker .4s 4.4s ease-in-out;
-    -webkit-animation: flicker .4s 4.4s ease-in-out; //fix this on safari and firefox!
-    animation: flicker .4s 4.4s ease-in-out;
+    animation: 
+        flicker .4s 4.4s ease-in-out,
+        fadeIn .5s .6s ease;
+    -moz-animation: 
+        flicker .4s 4.4s ease-in-out,
+        fadeIn .5s .6s ease;
+    -webkit-animation: 
+        flicker .4s 4.4s ease-in-out,
+        fadeIn .5s .6s ease;
 }
+
 .flicker-four {
-    -moz-animation: flicker .4s 4.6s ease-in-out;
-    -webkit-animation: flicker .4s 4.6s ease-in-out; //fix this on safari and firefox!
-    animation: flicker .4s 4.6s ease-in-out;
+    animation: 
+        flicker .4s 4.6s ease-in-out,
+        fadeIn .5s .8s ease;
+    -moz-animation: 
+        flicker .4s 4.6s ease-in-out,
+        fadeIn .5s .8s ease;
+    -webkit-animation: 
+        flicker .4s 4.6s ease-in-out,
+        fadeIn .5s .8s ease;
 }
 
 .navbar-brand {

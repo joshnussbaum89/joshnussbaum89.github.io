@@ -2,16 +2,89 @@
 /*              Animations                       */
 /* ============================================= */
   
+// site description border color animation
 @keyframes caret {
     50% {
       border-color: transparent;
     }
 }
 
+// safari
+@-webkit-keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
+// firefox
+@-moz-keyframes caret {
+    50% {
+      border-color: transparent;
+    }
+}
+
+// skills animation
 @keyframes flicker {
     50% {
         transform: translateY(-10px);
         fill: rgba(255, 255, 131, 0.2);
         box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+    }
+}
+
+// safari
+@-webkit-keyframes flicker {
+    50% {
+        transform: translateY(-10px);
+        fill: rgba(255, 255, 131, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+    }
+}
+
+// firefox
+@-moz-keyframes flicker {
+    50% {
+        transform: translateY(-10px);
+        fill: rgba(255, 255, 131, 0.2);
+        box-shadow: 0 0 10px rgba(255, 255, 131, 0.2);
+    }
+}
+
+// display animation
+@keyframes fadeIn {
+    0% {
+        transform: translateY(0px) scale(.9);
+    }
+    50% {
+        transform: translateY(10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+// safari
+@-webkit-keyframes fadeIn {
+    0% {
+        transform: translateY(0px) scale(.9);
+    }
+    50% {
+        transform: translateY(10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+// firefox
+@-moz-keyframes fadeIn {
+    0% {
+        transform: translateY(0px) scale(.9);
+    }
+    50% {
+        transform: translateY(10px) scale(1.1);
+    }
+    100% {
+        transform: translateY(0px);
     }
 }
