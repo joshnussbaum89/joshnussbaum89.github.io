@@ -645,7 +645,19 @@ h2 {
 }
 
 .footer-hover:hover {
-  fill: #f22f46;
+  fill: url(#Gradient1);
+}
+
+.stop1 {
+  stop-color: #333333;
+}
+
+.stop2 {
+  stop-color: #f22f46;
+}
+
+.stop3 {
+  stop-color: #ff784f;
 }
 
 /* ============================================= */

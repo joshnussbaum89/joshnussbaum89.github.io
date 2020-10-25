@@ -34,7 +34,20 @@
 }
 
 .footer-hover:hover {
-    fill: $hot-red;
+    // fill: $hot-red;
+    fill: url(#Gradient1);
+}
+.stop1 { 
+    stop-color: $dark-text; 
+}
+        
+.stop2 { 
+    stop-color: $hot-red; 
+    // stop-opacity: 0; 
+}
+
+.stop3 { 
+    stop-color: $orange; 
 }
 
 // contact form 

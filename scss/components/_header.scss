@@ -44,6 +44,13 @@
     transition: .2s;
     &:hover {
         color: $hot-red !important;
+        // background: linear-gradient(330deg, $dark-text, $hot-red);
+        // text-shadow: none;
+        // background-clip: text;
+        // -webkit-background-clip: text;
+        // -moz-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        // -moz-text-fill-color: transparent;
     }
 }
 
