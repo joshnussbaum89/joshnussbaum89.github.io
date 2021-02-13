@@ -1,6 +1,6 @@
 /* ============================================= */
 /*              Header                           */
-/* ============================================= */ 
+/* ============================================= */
 
 .header {
     padding-bottom: 75px;
@@ -41,16 +41,9 @@
 
 .nav-link {
     color: $dark-text !important;
-    transition: .2s;
+    transition: 0.2s;
     &:hover {
         color: $hot-red !important;
-        // background: linear-gradient(330deg, $dark-text, $hot-red);
-        // text-shadow: none;
-        // background-clip: text;
-        // -webkit-background-clip: text;
-        // -moz-background-clip: text;
-        // -webkit-text-fill-color: transparent;
-        // -moz-text-fill-color: transparent;
     }
 }
 
@@ -58,9 +51,9 @@
     @include flexy($align: center, $dir: column);
     &-title {
         margin: 1rem 0;
-        font-family: 'Waiting for the Sunrise', cursive;
+        font-family: "Waiting for the Sunrise", cursive;
         font-size: 2.5rem;
-        border-right: .05rem solid;
+        border-right: 0.05rem solid;
         animation: caret 1s steps(1) infinite;
         text-transform: uppercase;
     }
@@ -72,53 +65,35 @@
 
 .skills-icon {
     width: 50px;
-    margin: 1rem .6rem;
+    margin: 1rem 0.6rem;
 }
 
 .flicker-one {
-    animation: 
-        flicker .4s 4s ease-in-out,
-        fadeIn .5s .2s ease;
-    -moz-animation: 
-        flicker .4s 4s ease-in-out,
-        fadeIn .5s .2s ease;
-    -webkit-animation: 
-        flicker .4s 4s ease-in-out,
-        fadeIn .5s .2s ease;
+    animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
+    -moz-animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
+    -webkit-animation: flicker 0.4s 4s ease-in-out, fadeIn 0.5s 0.2s ease;
 }
 
 .flicker-two {
-    animation: 
-        flicker .4s 4.2s ease-in-out,
-        fadeIn .5s .4s ease;
-    -moz-animation: 
-        flicker .4s 4.2s ease-in-out,
-        fadeIn .5s .4s ease;
-    -webkit-animation: 
-        flicker .4s 4.2s ease-in-out,
-        fadeIn .5s .4s ease;
+    animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
+    -moz-animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
+    -webkit-animation: flicker 0.4s 4.2s ease-in-out, fadeIn 0.5s 0.4s ease;
 }
 
 .flicker-three {
-    animation: 
-        flicker .4s 4.4s ease-in-out,
-        fadeIn .5s .6s ease;
-    -moz-animation: 
-        flicker .4s 4.4s ease-in-out,
-        fadeIn .5s .6s ease;
-    -webkit-animation: 
-        flicker .4s 4.4s ease-in-out,
-        fadeIn .5s .6s ease;
+    animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
+    -moz-animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
+    -webkit-animation: flicker 0.4s 4.4s ease-in-out, fadeIn 0.5s 0.6s ease;
 }
 
 .flicker-four {
-    animation: 
-        flicker .4s 4.6s ease-in-out,
-        fadeIn .5s .8s ease;
-    -moz-animation: 
-        flicker .4s 4.6s ease-in-out,
-        fadeIn .5s .8s ease;
-    -webkit-animation: 
-        flicker .4s 4.6s ease-in-out,
-        fadeIn .5s .8s ease;
+    animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
+    -moz-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
+    -webkit-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
+}
+
+.flicker-five {
+    animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
+    -moz-animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
+    -webkit-animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
 }

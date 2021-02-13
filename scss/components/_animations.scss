@@ -1,25 +1,25 @@
 /* ============================================= */
 /*              Animations                       */
 /* ============================================= */
-  
+
 // site description border color animation
 @keyframes caret {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
 }
 
 // safari
 @-webkit-keyframes caret {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
 }
 
 // firefox
 @-moz-keyframes caret {
     50% {
-      border-color: transparent;
+        border-color: transparent;
     }
 }
 
@@ -53,7 +53,7 @@
 // display animation
 @keyframes fadeIn {
     0% {
-        transform: translateY(0px) scale(.9);
+        transform: translateY(0px) scale(0.9);
     }
     50% {
         transform: translateY(10px) scale(1.1);
@@ -66,7 +66,7 @@
 // safari
 @-webkit-keyframes fadeIn {
     0% {
-        transform: translateY(0px) scale(.9);
+        transform: translateY(0px) scale(0.9);
     }
     50% {
         transform: translateY(10px) scale(1.1);
@@ -79,7 +79,7 @@
 // firefox
 @-moz-keyframes fadeIn {
     0% {
-        transform: translateY(0px) scale(.9);
+        transform: translateY(0px) scale(0.9);
     }
     50% {
         transform: translateY(10px) scale(1.1);

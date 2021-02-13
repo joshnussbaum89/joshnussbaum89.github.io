@@ -6,17 +6,20 @@
 AOS.init();
 
 // fade in "back to top" icon when user scrolls past 600
-const toTopIcon = document.querySelector('.footer-sound-icon');
-window.addEventListener('scroll', () => {
+const backToTop = () => {
+    const toTopIcon = document.querySelector('.footer-sound-icon');
     if (window.scrollY > 600) {
         toTopIcon.classList.add('fade');
     } else if (window.scrollY < 600) {
         toTopIcon.classList.remove('fade');
     }
-});
+}
+
+// Listen to user scrolling
+window.addEventListener('scroll', backToTop);
 
 // typewriter animation for page description
-document.addEventListener('DOMContentLoaded', function (event) {
+document.addEventListener('DOMContentLoaded', () => {
     // array with texts to type in typewriter
     const dataText = ["Web Developer"];
 
@@ -29,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             document.querySelector("h2").innerHTML = text.substring(0, i + 1) + '<span aria-hidden="true"></span>';
 
             // wait for a while and call this function again for next character
-            setTimeout(function () {
+            setTimeout(() => {
                 typeWriter(text, i + 1, fnCallback);
             }, 300);
         }
@@ -40,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         }
     }
     // start a typewriter animation for a text in the dataText array
-    function StartTextAnimation(i) {
+    const StartTextAnimation = (i) => {
         if (typeof dataText[i] === 'undefined') {
             setTimeout(function () {
                 StartTextAnimation(0);

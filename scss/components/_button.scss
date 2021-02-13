@@ -3,16 +3,16 @@
 /* ============================================= */
 
 .overlay-button-container {
-    @include flexy();
+    @include flexy($just: center);
 }
 
 .overlay-button {
     color: $dark-text;
     border: 1px solid $dark-text;
-    padding: .3rem 1.3rem;
-    margin: 0 .4rem;
+    padding: 0.3rem 1.3rem;
+    margin: 0 0.4rem;
     box-shadow: 3px 3px 0 $dark-text;
-    transition: .4s;
+    transition: 0.4s;
 }
 
 .overlay-button:hover {

@@ -3,11 +3,10 @@
 /* ============================================= */
 
 @media (min-width: $md) {
-
     .nav-icon-horizontal {
         display: block;
     }
-    
+
     .nav-icon-vertical {
         display: none;
     }
@@ -20,15 +19,13 @@
         width: 70%;
     }
 
-    .portfolio-cards {
+    .portfolio-frames {
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 2rem;
     }
-    
 }
 
 @media (min-width: $lg) {
-    
     .site-header {
         @include flexy($align: center, $just: space-between);
         padding: 1rem 0;
@@ -42,19 +39,17 @@
         width: 60%;
     }
 
-    .portfolio-cards {
+    .portfolio-frames {
         grid-template-columns: repeat(3, 1fr);
     }
 
     .footer-hover {
         margin: auto;
     }
-
 }
 
 @media (max-width: $xs) {
-
-    .card-description {
+    .frame-description {
         display: none;
     }
 
@@ -70,13 +65,10 @@
     .blob-one {
         width: 950px;
     }
-
 }
 
 @media (max-width: $md) {
-
     .blob-one {
         right: 0px;
     }
-    
 }

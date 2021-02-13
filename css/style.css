@@ -561,11 +561,18 @@ h2 {
   -webkit-animation: flicker 0.4s 4.6s ease-in-out, fadeIn 0.5s 0.8s ease;
 }
 
+.flicker-five {
+  animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
+  -moz-animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
+  -webkit-animation: flicker 0.4s 4.8s ease-in-out, fadeIn 0.5s 1s ease;
+}
+
 /* ============================================= */
 /*              Button                           */
 /* ============================================= */
 .overlay-button-container {
   display: flex;
+  justify-content: center;
 }
 
 .overlay-button {
@@ -671,18 +678,18 @@ h2 {
   text-align: center;
 }
 
-.portfolio-cards {
+.portfolio-frames {
   margin: 4rem 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 3rem;
 }
 
-.card {
+.frame {
   position: relative;
   text-align: center;
 }
-.card-overlay {
+.frame-overlay {
   transition: 0.5s ease;
   opacity: 0;
   position: absolute;
@@ -692,45 +699,45 @@ h2 {
   -ms-transform: translate(-50%, -50%);
 }
 
-.card:hover .card-image {
+.frame:hover .frame-image {
   opacity: 0.3;
 }
 
-.card:hover .card-overlay {
+.frame:hover .frame-overlay {
   opacity: 1;
 }
 
-.card-image {
+.frame-image {
   opacity: 1;
   transition: 0.4s ease;
 }
 
-.card-1,
-.card-2,
-.card-3,
-.card-4,
-.card-5,
-.card-6 {
+.frame-1,
+.frame-2,
+.frame-3,
+.frame-4,
+.frame-5,
+.frame-6 {
   border: 2px solid #333333;
   box-shadow: 5px 5px 0 #333333;
   width: 100%;
 }
 
-.card-1:hover,
-.card-2:hover,
-.card-3:hover,
-.card-4:hover,
-.card-5:hover,
-.card-6:hover {
+.frame-1:hover,
+.frame-2:hover,
+.frame-3:hover,
+.frame-4:hover,
+.frame-5:hover,
+.frame-6:hover {
   box-shadow: none;
 }
 
-.card-title {
+.frame-title {
   margin: auto;
   font-size: 1.3rem;
 }
 
-.card-description {
+.frame-description {
   margin: 0.8rem auto;
 }
 
@@ -759,7 +766,7 @@ h2 {
     width: 70%;
   }
 
-  .portfolio-cards {
+  .portfolio-frames {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
   }
@@ -780,7 +787,7 @@ h2 {
     width: 60%;
   }
 
-  .portfolio-cards {
+  .portfolio-frames {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -789,7 +796,7 @@ h2 {
   }
 }
 @media (max-width: 380px) {
-  .card-description {
+  .frame-description {
     display: none;
   }
 
